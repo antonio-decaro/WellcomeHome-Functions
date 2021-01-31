@@ -18,7 +18,7 @@ class DefaultConfig:
 
     # Cosmos DB infos
     COSMOSDB_ENDPOINT = "https://wellcomehome-cosmosdb.documents.azure.com:443/"
-    COSMOSDB_KEY = '36Dl30Ip8Pb05iqGT5YLKEMb6Nb0FmgLpKFWHrojoJlsLOIKRPw1NnLSCe3Q0eTkng0il20Ojc5eLXkF8wCnwg=='
+    COSMOSDB_KEY = client.get_secret('wellcomehome-db-key').value
     # COSMOSDB_KEY = client.get_secret('wellcomehome-db-key').value
     DATABASE_NAME = "WellcomeHomeDB"
     PEOPLE_CONTAINER = "People"
